@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio | Sujit Mishra</title>
+    <link rel="stylesheet" href="static/css/style.css">
+    <script src="https://kit.fontawesome.com/13dd8ba9fe.js" crossorigin="anonymous"></script>
+<meta name="robots" content="index, follow">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="I'm Sujit Mishra, a skilled web developer and graphic designer. Check out my portfolio and let's create something amazing!">
+
+
+<meta name="keywords" content="Sujit Mishra, web developer, graphic designer, portfolio, UI/UX design, website development">
+
+<meta name="author" content="Sujit Mishra">
+
+
+<meta property="og:title" content="Sujit Mishra | Web Developer & Graphic Designer">
+<meta property="og:description" content="Explore my portfolio showcasing creative website development and graphic design work.">
+<meta property="og:image" content="https://sujitmishra.com.np/sujit-mishra-image-logo.png">
+<meta property="og:url" content="https://sujitmishra.com.np">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Sujit Mishra Portfolio">
+<meta property="og:locale" content="en_US">
+
+    <meta name="twitter:card" content="home_page">
+    <meta name="twitter:title" content="Sujit Mishra | Web Developer & Graphic Designer">
+    <meta name="twitter:description" content="Explore my portfolio showcasing creative website development and graphic design work.">
+    <meta name="twitter:image" content="https://sujitmishra.com.np/sujit-mishra-image-logo.png">
+    
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="icon" type="image/png" href="favicon_io/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon_io/favicon-16x16.png">
+
+<link rel="icon" type="image/png" sizes="192x192" href="favicon_io/android-chrome-192x192.png">
+<link rel="icon" type="image/png" sizes="512x512" href="favicon_io/android-chrome-512x512.png">
+
+<link rel="manifest" href="/favicon_io/site.webmanifest">
+<link rel="canonical" href="https://sujitmishra.com.np">
+
+
+
+    <script src="https://kit.fontawesome.com/13dd8ba9fe.js" crossorigin="anonymous"></script>
+    <link rel="manifest" href="manifest.json">
+
+
+    <title>Sujit Mishra | Web Developer & Graphic Designer</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sujit Mishra",
+        "url": "https://sujitmishra.com.np",
+        "jobTitle": "Web Developer & Graphic Designer",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Origin Site"
+        },
+        "sameAs": [
+          "https://www.linkedin.com/in/sujitmishra126",
+          "https://facebook.com/projectswithsujit",
+          "https://dribbble.com/your-profile"
+        ]
+      }
+      </script>
+
+    <style>
+
+    </style>
+
+<body>
+
+    <nav id="navbar">
+        <span><a href="#hero-section" class="nav-link" data-section="hero-section">Home</a></span>
+        <span><a href="#about-section" class="nav-link" data-section="about-section">About Me</a></span>
+        <span><a href="/projects.html" class="nav-link" data-section="projects-section">Projects</a></span>
+        <span><a href="#contact-section" class="nav-link" data-section="contact-section">Contact Me</a></span>
+    </nav>
+
+    <main>
+        <section id="hero-section">
+
+
+            <div>
+                <h1>Welcome to my website</h1>
+                <div class="hero-menu">
+                    <span> <a href="#about-section"> About Me </a></span>
+                    <span> <a href="/projects.html"> Projects </a> </span>
+                    <span> <a href="#contact-section"> Contact Me </a> </span>
+                    <span class="cv"> Download my CV</span>
+                    <div id="toast">This is a toast message!</div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section id="about-section">
+        <h1>
+            About Me
+        </h1>
+        <p>
+            Hi, I am Sujit Mishra, a web developer, graphic designer, and logo designer who is passionate about creating
+            meaningful digital experiences. I enjoy building clean and responsive websites that focus on both usability
+            and visual appeal. My design work includes crafting brand identities, designing logos, and developing
+            graphics that help ideas stand out in a clear and creative way. I believe that every project has a story,
+            and my goal is to express that story through thoughtful design and purposeful development.
+
+            I constantly explore new tools and techniques to stay updated in the digital world, and I enjoy learning new
+            skills that help me grow as a creator. I approach every project with careful attention to detail and a
+            strong commitment to quality. I value open communication and collaborative problem solving because they lead
+            to the best results. I look forward to working with people who want to turn their ideas into something
+            memorable and impactful.
+        </p>
+    </section>
+
+
+    <section id="projects-section">
+        <h1>Projects</h1>
+        <div class="project-list" id="project-list"></div>
+    </section>
+    
+    <div class="pMore-Container"><a href="/projects.html" class="pMoreBtn">View More</a></div>
+
+    <!-- Firebase & Script -->
+    <script type="module" src="projects.js"></script>
+
+    <section id="contact-section">
+
+
+        <div class="contact-intro">
+            <h2 class="contact-title">Get in Touch</h2>
+            <p class="contact-description">
+                Fill out the form below and we'll get back to you as soon as possible.
+            </p>
+        </div>
+
+        <form class="contact-form" id="contactForm" method="POST">
+            <div class="form-group-container">
+                <div class="form-group">
+                    <label for="name" class="form-label">Name</label>
+                    <input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="email" class="form-label">Email</label>
+                    <input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+                </div>
+                <div class="form-group">
+                    <label for="phone" class="form-label">Phone</label>
+                    <input id="phone" name="phone" class="form-input" placeholder="Your phone number" type="text" />
+                </div>
+                <div class="form-group">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+                </div>
+            </div>
+            <button class="form-submit" type="submit">Send Message</button>
+        </form>
+
+
+
+    </section>
+
+
+    <!-- social-media-icon -->
+
+
+    <span class="sm sm1">
+        <i class="fa-duotone fa-solid fa-xmark fa-fade"
+            style="--fa-primary-color: #dedede; --fa-secondary-color: #ffffff;"></i>
+    </span>
+
+    <span class="sm sm2">
+        <i class="fa-solid fa-user fa-fade" style="--fa-primary-color: #dedede; --fa-secondary-color: #ffffff;"></i>
+
+    </span>
+
+    <span class="sm-list">
+        <ul>
+            <li><a href="https://www.facebook.com/projectswithsujit" target="_blank"><i
+                        class="fa-brands fa-facebook fa-fade"></i></a></li>
+            <li><a href="#" target="_blank"><i class="fa-brands fa-x-twitter fa-fade"></i></a></li>
+            <li><a href="https://np.linkedin.com/in/sujitmishra126" target="_blank"><i
+                        class="fa-brands fa-linkedin fa-fade"></i></a></li>
+            <li><a href="https://github.com/projectswithsujit" target="_blank"><i
+                        class="fa-brands fa-github fa-fade"></i></a></li>
+            <li><a href="mailto:projectswithsujit@gmail.com" target="_blank"><i class="fa-solid fa-message fa-fade"></i></a></li>
+        </ul>
+    </span>
+
+
+    <section id="footer">
+        <footer>
+            © 2025 Sujit Mishra. All Rights Reserved
+        </footer>
+    </section>
+
+    <script>
+
+        const _0x260fb1=_0x2471;(function(_0x43b084,_0x58f3e6){const _0x57157e=_0x2471,_0x49a857=_0x43b084();while(!![]){try{const _0x2b6e00=parseInt(_0x57157e(0xf7))/0x1*(-parseInt(_0x57157e(0x103))/0x2)+-parseInt(_0x57157e(0x106))/0x3+-parseInt(_0x57157e(0x10f))/0x4*(parseInt(_0x57157e(0x101))/0x5)+parseInt(_0x57157e(0x108))/0x6+-parseInt(_0x57157e(0x10b))/0x7*(-parseInt(_0x57157e(0x10e))/0x8)+-parseInt(_0x57157e(0x10a))/0x9+-parseInt(_0x57157e(0x11d))/0xa*(-parseInt(_0x57157e(0xf8))/0xb);if(_0x2b6e00===_0x58f3e6)break;else _0x49a857['push'](_0x49a857['shift']());}catch(_0x456411){_0x49a857['push'](_0x49a857['shift']());}}}(_0x1794,0xd1313));const _0x56ee9f=_0x23af;(function(_0x176822,_0x3f8310){const _0x4df485=_0x2471,_0x2ade49=_0x23af,_0x49884a=_0x176822();while(!![]){try{const _0x3d6d2a=parseInt(_0x2ade49(0x137))/0x1*(parseInt(_0x2ade49(0x144))/0x2)+-parseInt(_0x2ade49(0x125))/0x3*(-parseInt(_0x2ade49(0x147))/0x4)+-parseInt(_0x2ade49(0x13b))/0x5*(parseInt(_0x2ade49(0x149))/0x6)+parseInt(_0x2ade49(0x134))/0x7*(parseInt(_0x2ade49(0x12f))/0x8)+parseInt(_0x2ade49(0x13f))/0x9+-parseInt(_0x2ade49(0x13a))/0xa*(parseInt(_0x2ade49(0x139))/0xb)+-parseInt(_0x2ade49(0x123))/0xc*(parseInt(_0x2ade49(0x142))/0xd);if(_0x3d6d2a===_0x3f8310)break;else _0x49884a[_0x4df485(0x11a)](_0x49884a[_0x4df485(0x111)]());}catch(_0x27adba){_0x49884a[_0x4df485(0x11a)](_0x49884a[_0x4df485(0x111)]());}}}(_0x3e26,0xb87fb));function _0x23af(_0x32c727,_0x5c4b5e){_0x32c727=_0x32c727-0x123;const _0x42eb20=_0x3e26();let _0x346b7d=_0x42eb20[_0x32c727];return _0x346b7d;}const sm=document[_0x56ee9f(0x13c)]('sm');function _0x1794(){const _0x1aba7a=['offsetHeight','.sm2','776PqWOdO','20bcfAMO','innerHeight','shift','16849937caxFnA','sm-hide','nav-active','24vWNABt','querySelectorAll','top','12511719KYQyai','25phQaLA','push','offsetTop','forEach','9830hWVMpV','10jHrJUb','9856682eRclKa','section','addEventListener','369948ojXzpB','17435IlOTWG','add','2WCyJAH','classList','1467866ewlyYe','getAttribute','style','click','textContent','247135XTulQB','sm-list','6lgHIGA','dataset','CV\x20hasn\x27t\x20been\x20uploaded\x20yet','1019073ZcGLnR','querySelector','6094716xXQaxI','navbar','6808077pmLKPE','53123YXlCdp'];_0x1794=function(){return _0x1aba7a;};return _0x1794();}function _0x2471(_0x3edaec,_0x2d69b3){_0x3edaec=_0x3edaec-0xf6;const _0x1794d7=_0x1794();let _0x2471f2=_0x1794d7[_0x3edaec];return _0x2471f2;}sm[0x1][_0x56ee9f(0x145)](_0x260fb1(0xff),()=>{const _0x553e1d=_0x260fb1,_0x534e38=_0x56ee9f;document[_0x534e38(0x13c)](_0x534e38(0x141))[0x0][_0x534e38(0x146)][_0x534e38(0x124)]('d');const _0x25c9b8=document[_0x534e38(0x138)](_0x534e38(0x12a)),_0x923cc0=document[_0x534e38(0x138)](_0x553e1d(0x10d));_0x923cc0[_0x534e38(0x146)][_0x553e1d(0xf9)](_0x553e1d(0x113));}),sm[0x0][_0x56ee9f(0x145)](_0x260fb1(0xff),()=>{const _0x463bf9=_0x260fb1,_0x46d99e=_0x56ee9f;document[_0x46d99e(0x13c)](_0x46d99e(0x141))[0x0][_0x463bf9(0xfb)][_0x46d99e(0x126)]('d');const _0x12fd64=document[_0x46d99e(0x138)]('.sm1'),_0x1964a6=document[_0x46d99e(0x138)](_0x46d99e(0x127));_0x1964a6[_0x46d99e(0x146)][_0x46d99e(0x126)](_0x46d99e(0x132));}),window[_0x56ee9f(0x145)]('scroll',function(){const _0x2bf816=_0x56ee9f;let _0x3325ee=window[_0x2bf816(0x130)]*0.5;window[_0x2bf816(0x148)]>=_0x3325ee?document[_0x2bf816(0x13d)](_0x2bf816(0x14a))[_0x2bf816(0x129)][_0x2bf816(0x12e)]='0':document[_0x2bf816(0x13d)](_0x2bf816(0x14a))[_0x2bf816(0x129)]['top']=_0x2bf816(0x12b);});const sections=document[_0x260fb1(0x116)](_0x56ee9f(0x128)),navLinks=document['querySelectorAll'](_0x56ee9f(0x12c));window[_0x56ee9f(0x145)]('scroll',()=>{const _0x3b98df=_0x56ee9f;let _0x192291='';sections[_0x3b98df(0x135)](_0x1a6a0b=>{const _0x42a5f1=_0x3b98df,_0x14c951=window[_0x42a5f1(0x148)],_0x943798=_0x1a6a0b[_0x42a5f1(0x140)]-0x50,_0x1fabb6=_0x1a6a0b[_0x42a5f1(0x133)];_0x14c951>=_0x943798&&_0x14c951<_0x943798+_0x1fabb6&&(_0x192291=_0x1a6a0b[_0x42a5f1(0x143)]('id'));}),navLinks['forEach'](_0x5f50d6=>{const _0x5d6f44=_0x3b98df;_0x5f50d6[_0x5d6f44(0x146)][_0x5d6f44(0x126)](_0x5d6f44(0x136)),_0x5f50d6[_0x5d6f44(0x131)][_0x5d6f44(0x128)]===_0x192291&&_0x5f50d6[_0x5d6f44(0x146)][_0x5d6f44(0x124)](_0x5d6f44(0x136));});});const cvd=document[_0x56ee9f(0x13c)]('cv')[0x0];cvd['addEventListener'](_0x56ee9f(0x12d),()=>{const _0x4d048b=_0x260fb1,_0x4ef76b=_0x56ee9f,_0x208291=document[_0x4ef76b(0x13d)]('toast');_0x208291[_0x4ef76b(0x14b)]=_0x4d048b(0x105),_0x208291[_0x4ef76b(0x146)][_0x4ef76b(0x124)](_0x4ef76b(0x13e)),setTimeout(()=>{const _0x1b0c90=_0x4ef76b;_0x208291[_0x1b0c90(0x146)][_0x1b0c90(0x126)](_0x1b0c90(0x13e));},0x7d0);});function _0x3e26(){const _0x507c5=_0x260fb1,_0x5bdb37=['remove',_0x507c5(0x10d),_0x507c5(0x120),_0x507c5(0xfe),'.sm1','-60px','.nav-link','click',_0x507c5(0x117),'2083624fPDWPy',_0x507c5(0x110),_0x507c5(0x104),_0x507c5(0x113),_0x507c5(0x10c),'35ZeZABZ',_0x507c5(0x11c),_0x507c5(0x114),_0x507c5(0xfa),_0x507c5(0x107),_0x507c5(0x11f),_0x507c5(0x11e),_0x507c5(0x119),'getElementsByClassName','getElementById','show',_0x507c5(0x118),_0x507c5(0x11b),_0x507c5(0x102),_0x507c5(0x112),_0x507c5(0xfd),_0x507c5(0xfc),_0x507c5(0xf6),'classList','424trGbsw','scrollY','80130ZfVreD',_0x507c5(0x109),_0x507c5(0x100),_0x507c5(0x115),_0x507c5(0xf9),'4260bJHivo'];return _0x3e26=function(){return _0x5bdb37;},_0x3e26();}
+    </script>
+
+    <script>
+        const _0x30af7a=_0x4815;(function(_0x30236e,_0x68f710){const _0x887289=_0x4815,_0x18a8a4=_0x30236e();while(!![]){try{const _0x207cf5=parseInt(_0x887289(0x18e))/0x1*(parseInt(_0x887289(0x177))/0x2)+-parseInt(_0x887289(0x168))/0x3*(parseInt(_0x887289(0x185))/0x4)+-parseInt(_0x887289(0x186))/0x5+parseInt(_0x887289(0x174))/0x6+parseInt(_0x887289(0x166))/0x7*(parseInt(_0x887289(0x171))/0x8)+-parseInt(_0x887289(0x17a))/0x9+-parseInt(_0x887289(0x192))/0xa;if(_0x207cf5===_0x68f710)break;else _0x18a8a4['push'](_0x18a8a4['shift']());}catch(_0x5a7211){_0x18a8a4['push'](_0x18a8a4['shift']());}}}(_0x1e4f,0xce6bc));function _0x3f1c(){const _0x277707=_0x4815,_0x45e2fb=[_0x277707(0x180),_0x277707(0x173),'hidden',_0x277707(0x18d),_0x277707(0x17d),_0x277707(0x194),_0x277707(0x181),'trim',_0x277707(0x17f),_0x277707(0x196),_0x277707(0x170),_0x277707(0x193),_0x277707(0x191),_0x277707(0x176),_0x277707(0x17b),_0x277707(0x17c),_0x277707(0x18c),_0x277707(0x178),_0x277707(0x188),_0x277707(0x16a),_0x277707(0x184),_0x277707(0x18b),_0x277707(0x175),'4307980pFsLWy','reset',_0x277707(0x172),_0x277707(0x16d),_0x277707(0x169),_0x277707(0x195),_0x277707(0x18f),_0x277707(0x16e),_0x277707(0x187),'addEventListener','createElement',_0x277707(0x179),_0x277707(0x167),'9201528hQFToT',_0x277707(0x16b),_0x277707(0x16c)];return _0x3f1c=function(){return _0x45e2fb;},_0x3f1c();}const _0x5f105f=_0x3aca;function _0x3aca(_0x5c880c,_0x243742){_0x5c880c=_0x5c880c-0x1d8;const _0x49fde5=_0x3f1c();let _0x263c30=_0x49fde5[_0x5c880c];return _0x263c30;}function _0x1e4f(){const _0x152f78=['appendChild','forEach','2948386xcUvUU','8233918vOSRcA','12RcbHZn','Fields\x20are\x20empty!','906xzDygg','1481PAnkJW','access_key','1999875VYbEkd','An\x20error\x20occurred.\x20Please\x20try\x20again.','New\x20Contact\x20Form\x20Submission\x20from\x20Web3Forms','from_name','32ZmXJBB','getElementsByClassName','action','8942952OFzUEX','toast','classList','321778DCQCdg','name','My\x20Website','9743472ldTGJd','remove','form-input','type','push','input','https://api.web3forms.com/submit','135itjkvq','innerHTML','submit','subject','969796ZMneWn','184855bLptzC','error','contactForm','length','shift','Failed\x20to\x20send\x20message.\x20Please\x20try\x20again.','getElementById','POST','1OfkNPW','show','add','value','4012980eiVLYC','06fd3328-5ed1-47e6-8e08-c32fb8d8e0f1','22878270BCoxgh','submiting...','107202lkjLyK'];_0x1e4f=function(){return _0x152f78;};return _0x1e4f();}function _0x4815(_0xf06dd1,_0x3f7d90){_0xf06dd1=_0xf06dd1-0x165;const _0x1e4fe=_0x1e4f();let _0x481576=_0x1e4fe[_0xf06dd1];return _0x481576;}(function(_0x4bcb76,_0x3246ab){const _0x56bad7=_0x4815,_0xe94875=_0x3aca,_0x165abf=_0x4bcb76();while(!![]){try{const _0x272c90=parseInt(_0xe94875(0x1dd))/0x1*(-parseInt(_0xe94875(0x1f2))/0x2)+-parseInt(_0xe94875(0x1f9))/0x3+-parseInt(_0xe94875(0x1f6))/0x4+-parseInt(_0xe94875(0x1e5))/0x5*(-parseInt(_0xe94875(0x1e8))/0x6)+parseInt(_0xe94875(0x1db))/0x7+-parseInt(_0xe94875(0x1dc))/0x8+parseInt(_0xe94875(0x1e4))/0x9;if(_0x272c90===_0x3246ab)break;else _0x165abf[_0x56bad7(0x17e)](_0x165abf['shift']());}catch(_0x15d5b6){_0x165abf['push'](_0x165abf[_0x56bad7(0x18a)]());}}}(_0x3f1c,0x9b469));const form=document[_0x30af7a(0x18c)](_0x5f105f(0x1f1)),toast=document[_0x5f105f(0x1ef)](_0x5f105f(0x1f5));form[_0x30af7a(0x173)]=_0x5f105f(0x1df);const hiddenInputs=[{'name':_0x5f105f(0x1de),'value':_0x5f105f(0x1ea)},{'name':_0x5f105f(0x1f3),'value':_0x30af7a(0x16f)},{'name':_0x5f105f(0x1e9),'value':_0x5f105f(0x1da)}];hiddenInputs[_0x30af7a(0x165)](_0x1c924b=>{const _0x4865dc=_0x30af7a,_0x4fc209=_0x5f105f,_0x3e2d22=document[_0x4fc209(0x1d9)](_0x4fc209(0x1e7));_0x3e2d22[_0x4fc209(0x1e3)]=_0x4fc209(0x1e1),_0x3e2d22[_0x4fc209(0x1f0)]=_0x1c924b[_0x4fc209(0x1f0)],_0x3e2d22[_0x4fc209(0x1eb)]=_0x1c924b[_0x4fc209(0x1eb)],form[_0x4865dc(0x197)](_0x3e2d22);});function showToast(_0x1fe50d){const _0x3a393a=_0x30af7a,_0x4c81b5=_0x5f105f;toast[_0x3a393a(0x182)]=_0x1fe50d,toast[_0x4c81b5(0x1ec)][_0x3a393a(0x190)](_0x3a393a(0x18f)),setTimeout(()=>{const _0x2c50cd=_0x4c81b5;toast[_0x2c50cd(0x1ec)][_0x2c50cd(0x1ed)](_0x2c50cd(0x1fc));},0x7d0);}form[_0x5f105f(0x1d8)](_0x30af7a(0x183),async _0x58cfb1=>{const _0x1e5906=_0x30af7a,_0x388930=_0x5f105f;_0x58cfb1['preventDefault']();const _0x5e7250=document[_0x388930(0x1f8)](_0x388930(0x1ee));let _0x485502=0x0;for(let _0x292ad2=0x0;_0x292ad2<_0x5e7250[_0x1e5906(0x189)];_0x292ad2++){var _0x5d8e60=document[_0x388930(0x1f8)](_0x1e5906(0x17c))[_0x292ad2][_0x388930(0x1eb)];(_0x5d8e60[_0x388930(0x1e6)]()==''||_0x5d8e60==null||_0x5d8e60==undefined)&&(_0x485502=_0x485502+0x1);}if(_0x485502!=0x0){showToast(_0x388930(0x1fa));return;}showToast(_0x388930(0x1fb));const _0x46ea44=new FormData(form);try{const _0x34ec69=await fetch(form[_0x388930(0x1e0)],{'method':_0x388930(0x1e2),'body':_0x46ea44});_0x34ec69['ok']?(showToast('Message\x20sent\x20successfully!<br>My\x20mail\x20:\x20projectswithsujit@gmail.com'),form[_0x388930(0x1f7)]()):showToast(_0x388930(0x1f4));}catch(_0x20bb5e){console[_0x388930(0x1fe)](_0x20bb5e),showToast(_0x388930(0x1fd));}});
+
+    </script>
+
+
+
+</body>
+
+</html>
