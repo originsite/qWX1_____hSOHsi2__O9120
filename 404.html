@@ -1,44 +1,78 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>404 - Page Not Found</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Not Found</title>
     <style>
+        /* Simple CSS for better presentation */
         body {
             font-family: Arial, sans-serif;
             text-align: center;
-            padding-top: 80px;
+            padding: 50px;
+            background-color: #f4f4f9;
+            color: #333;
         }
-        .error-box {
+        .container {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        h1 {
+            color: #d9534f;
+            font-size: 2.5em;
+        }
+        .not-found-text {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+        #not-found-item {
+            font-weight: bold;
+            color: #5cb85c; /* Highlight the missing item */
+            word-wrap: break-word; /* Ensure long paths wrap */
             display: inline-block;
-            padding: 20px 40px;
-            border: 1px solid #ccc;
-            border-radius: 10px;
+            max-width: 100%;
         }
     </style>
 </head>
 <body>
 
-<div class="error-box">
-    <h1>404</h1>
-    <p id="error-msg">Page not found.</p>
-    <a href="index.html">Go Back Home</a>
-</div>
+    <div class="container">
+        <h1>404 - Page Not Found</h1>
 
-<script>
-    // Read URL parameters
-    const params = new URLSearchParams(window.location.search);
+        <p class="not-found-text">
+            We are sorry, but the resource you requested could not be found.
+        </p>
 
-    // If there are params, show them
-    if ([...params].length > 0) {
-        let message = "The following parameter was not found:<br><br>";
+        <p class="not-found-text">
+            You tried to access: <span id="not-found-item">...</span>
+        </p>
 
-        params.forEach((value, key) => {
-            message += `<strong>${key}</strong> = "${value}"<br>`;
+        <p>
+            Please check the URL or return to the <a href="/">homepage</a>.
+        </p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // 1. Get the full path from the URL
+            // Example: If the user tried to go to https://example.com/products/456
+            // window.location.pathname will be: /products/456
+            const fullPath = window.location.pathname;
+
+            // 2. Select the HTML element to update
+            const notFoundElement = document.getElementById('not-found-item');
+
+            if (notFoundElement) {
+                // 3. Update the content of the span with the path
+                // We use decodeURIComponent to handle spaces and special characters in the URL
+                notFoundElement.textContent = decodeURIComponent(fullPath);
+            }
         });
-
-        document.getElementById("error-msg").innerHTML = message;
-    }
-</script>
+    </script>
 
 </body>
 </html>
